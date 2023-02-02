@@ -4,7 +4,7 @@ def addFrequencyToCharacter(s):
     for i in range(n):
         frequency[ord(s[i]) - ord('a')] += 1
     for i in range(n):
-        add = frequency[ord(s[i]) - ord('a')] % 26
+        add = frequency[ord(s[i]) - ord('a')] 
         if (ord(s[i]) + add <= ord('z')):
             s[i] = chr(ord(s[i]) + add)
         else:
